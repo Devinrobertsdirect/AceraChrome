@@ -1,0 +1,120 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    overflow: hidden; /* Prevent vertical scrolling */
+}
+
+/* Main content container styles */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    width: calc(100% - 240px); /* Adjusted width accounting for sidebar */
+    max-width: 100%; /* Allow full width */
+    margin-left: 240px; /* Ensure space for sidebar */
+    padding: 20px; /* Adjust padding as needed */
+    flex-wrap: wrap; /* Allow content to wrap */
+    overflow-y: hidden; /* Hide vertical overflow */
+}
+
+/* Container styles for the buttons and response box */
+.container {
+    flex: 1; /* Take up remaining space */
+    text-align: center;
+    margin-right: 20px; /* Margin between buttons and response box */
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    .button:hover {
+        background-color: #0056b3; /* Example button hover color */
+    }
+
+/* Response box styles */
+.response-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 240px; /* Larger sidebar width */
+    background-color: #1e1e1e; /* Darker background color */
+    height: 100%; /* Full height of the viewport */
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start from the top */
+    padding: 20px; /* Increased padding */
+    color: white;
+    z-index: 1000; /* Ensure sidebar stays on top */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Futuristic shadow effect */
+    transition: width 0.3s ease; /* Smooth transition for width changes */
+    overflow-y: auto; /* Enable vertical scrolling within sidebar if needed */
+}
+
+    .sidebar .logo img {
+        max-width: 100%;
+        margin-bottom: 20px; /* Additional margin for logo */
+    }
+
+.sidebar-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px; /* Increased padding */
+    margin-bottom: 10px; /* Smaller margin */
+    display: block;
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+    .sidebar-link:hover {
+        background-color: #333; /* Darker background on hover */
+    }
+
+.social-links {
+    margin-top: auto; /* Push social links to the bottom */
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px; /* Increased padding */
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+    .social-link:hover {
+        background-color: #333; /* Darker background on hover */
+    }

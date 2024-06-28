@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Acera Dashboard",
+  "version": "1.0",
+  "description": "Dashboard for the Acera extension",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "app.html", // Set app.html as the default popup
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "app.js" ]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "app.html", // Set app.html for browser action popup
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}

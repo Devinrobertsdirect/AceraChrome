@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for demonstration */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 200px;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            padding-top: 20px;
+        }
+
+        .logo img {
+            width: 120px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .sidebar-link,
+        .social-link {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+            .sidebar-link:hover,
+            .social-link:hover {
+                background-color: #555;
+            }
+
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .button:hover {
+                background-color: #0056b3;
+            }
+
+        .response-box {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 100px; /* Ensures the box is visible even without content */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="Acera.png" alt="Logo">
+        </div>
+        <a href="#" id="homeLink" class="sidebar-link">Home</a>
+        <a href="#" id="settingsLink" class="sidebar-link">Settings</a>
+        <a href="#" id="profileLink" class="sidebar-link">Profile</a>
+        <a href="#" id="devicesLink" class="sidebar-link">Devices</a>
+        <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Your App</h1>
+            <button id="activateGestureControl" class="button">Gesture Control</button>
+            <button id="activateAceraMark" class="button">Acera AI</button>
+            <button id="moreButton" class="button">MORE</button>
+            <div class="response-box" id="responseBox">
+                <!-- Response and feedback from AceraMarkreact will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to app.js -->
+    <script src="app.js"></script>
+</body>
+</html>
